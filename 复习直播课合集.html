@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025秋季复习直播课</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        /* 页面标题 */
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .page-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: #3498db;
+            margin: 10px auto 0;
+        }
+
+        /* 核心内容容器 - 三栏布局 */
+        .course-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        /* 每一栏的卡片样式 */
+        .course-section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .course-section:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 栏目标题 */
+        .section-title {
+            font-size: 20px;
+            color: #3498db;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        /* 班型卡片样式 */
+        .class-card {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .class-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .class-name::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 16px;
+            background-color: #3498db;
+            border-radius: 2px;
+        }
+
+        /* 操作按钮组 */
+        .action-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* 通用按钮样式 */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        /* 下载按钮 */
+        .download-btn {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .download-btn:hover {
+            background-color: #27ae60;
+        }
+
+        /* 视频链接按钮 */
+        .video-btn {
+            background-color: #e67e22;
+            color: white;
+        }
+
+        .video-btn:hover {
+            background-color: #d35400;
+        }
+
+        /* 图标样式 */
+        .icon {
+            font-size: 16px;
+        }
+
+        /* 响应式适配 - 移动端 */
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 24px;
+            }
+
+            .course-container {
+                grid-template-columns: 1fr;
+            }
+
+            .course-section {
+                padding: 20px;
+            }
+
+            .action-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面标题 -->
+    <h1 class="page-title">2025秋季复习直播课</h1>
+
+    <!-- 核心课程内容容器 -->
+    <div class="course-container">
+        <!-- 第一栏：第一次（1~4讲） -->
+        <div class="course-section">
+            <h2 class="section-title">第一次（1~4讲）</h2>
+            
+            <!-- 小星星班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小星星班</h3>
+                <div class="action-group">
+                    <a href="files/第一次/小星星/打印版.pdf" download="2025秋复习课_第一次_小星星_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第一次/小星星/解析版.pdf" download="2025秋复习课_第一次_小星星_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUwMjI5NjU2MA==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+
+            <!-- 小月亮班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小月亮班</h3>
+                <div class="action-group">
+                    <a href="files/第一次/小月亮/打印版.pdf" download="2025秋复习课_第一次_小月亮_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第一次/小月亮/解析版.pdf" download="2025秋复习课_第一次_小月亮_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUwMjI5Nzk3Mg==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+
+            <!-- 小太阳班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小太阳班</h3>
+                <div class="action-group">
+                    <a href="files/第一次/小太阳/打印版.pdf" download="2025秋复习课_第一次_小太阳_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第一次/小太阳/解析版.pdf" download="2025秋复习课_第一次_小太阳_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUwMjMwMDg3Mg==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二栏：第二次（5~8讲） -->
+        <div class="course-section">
+            <h2 class="section-title">第二次（5~8讲）</h2>
+            
+            <!-- 小星星班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小星星班</h3>
+                <div class="action-group">
+                    <a href="files/第二次/小星星/打印版.pdf" download="2025秋复习课_第二次_小星星_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第二次/小星星/解析版.pdf" download="2025秋复习课_第二次_小星星_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUwNjI2MDUyNA==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+
+            <!-- 小月亮班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小月亮班</h3>
+                <div class="action-group">
+                    <a href="files/第二次/小月亮/打印版.pdf" download="2025秋复习课_第二次_小月亮_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第二次/小月亮/解析版.pdf" download="2025秋复习课_第二次_小月亮_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUwNjI2MDU1Mg==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+
+            <!-- 小太阳班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小太阳班</h3>
+                <div class="action-group">
+                    <a href="files/第二次/小太阳/打印版.pdf" download="2025秋复习课_第二次_小太阳_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第二次/小太阳/解析版.pdf" download="2025秋复习课_第二次_小太阳_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjQ5Nzg5Nzc3Ng==.html " target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第三栏：第三次（9~12讲） -->
+        <div class="course-section">
+            <h2 class="section-title">第三次（9~12讲）</h2>
+            
+            <!-- 小星星班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小星星班</h3>
+                <div class="action-group">
+                    <a href="files/第三次/小星星/打印版.pdf" download="2025秋复习课_第三次_小星星_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第三次/小星星/解析版.pdf" download="2025秋复习课_第三次_小星星_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUwNjUxMDk1Ng==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+
+            <!-- 小月亮班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小月亮班</h3>
+                <div class="action-group">
+                    <a href="files/第三次/小月亮/打印版.pdf" download="2025秋复习课_第三次_小月亮_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第三次/小月亮/解析版.pdf" download="2025秋复习课_第三次_小月亮_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUxNDkxMTM5Ng==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+
+            <!-- 小太阳班型 -->
+            <div class="class-card">
+                <h3 class="class-name">小太阳班</h3>
+                <div class="action-group">
+                    <a href="files/第三次/小太阳/打印版.pdf" download="2025秋复习课_第三次_小太阳_打印版.pdf" class="btn download-btn">
+                        <span class="icon">📄</span> 打印版下载
+                    </a>
+                    <a href="files/第三次/小太阳/解析版.pdf" download="2025秋复习课_第三次_小太阳_解析版.pdf" class="btn download-btn">
+                        <span class="icon">📝</span> 解析版下载
+                    </a>
+                    <a href="https://v.youku.com/v_show/id_XNjUwNjUxMzgwMA==.html" target="_blank" class="btn video-btn">
+                        <span class="icon">🎬</span> 优酷视频观看
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
